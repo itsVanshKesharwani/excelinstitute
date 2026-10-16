@@ -1,0 +1,109 @@
+.login-wrap {
+  min-height: 100vh;
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-box {
+  background: #fff;
+  border: 1px solid #dde3f0;
+  border-radius: 10px;
+  padding: 28px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.login-box h2 { color: #1f3a93; }
+.login-box input {
+  padding: 10px;
+  border: 1px solid #c5cbd9;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.login-box button {
+  background: #1f3a93;
+  color: #fff;
+  border: none;
+  padding: 11px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.err { color: #c62828; font-size: 14px; }
+
+.dash { max-width: 1100px; margin: 110px auto 30px; padding: 0 16px; }
+.dash-top { display: flex; justify-content: space-between; align-items: center; }
+.dash-top h2 { color: #1f3a93; }
+.logout {
+  background: #fff;
+  border: 1px solid #c62828;
+  color: #c62828;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+.stat {
+  background: #eef2fb;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 14px;
+}
+.stat b { display: block; font-size: 26px; color: #1f3a93; }
+.tools { display: flex; gap: 10px; margin-bottom: 14px; }
+.tools input { flex: 1; }
+.tools input, .tools select {
+  padding: 9px;
+  border: 1px solid #c5cbd9;
+  border-radius: 6px;
+}
+.table-wrap { overflow-x: auto; }
+.dash table { width: 100%; border-collapse: collapse; background: #fff; }
+.dash th, .dash td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #e5e8f0;
+  font-size: 14px;
+}
+.dash th { background: #1f3a93; color: #fff; }
+.empty { text-align: center; color: #777; padding: 24px; }
+.actions { white-space: nowrap; }
+.actions button {
+  border: none;
+  padding: 6px 10px;
+  margin-right: 4px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+.actions .ok { background: #1a7f37; }
+.actions .no { background: #ff6a00; }
+.actions .del { background: #c62828; }
+.dash .badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+.dash .badge.pending { background: #fff3cd; color: #8a6d00; }
+.dash .badge.approved { background: #d4edda; color: #1a7f37; }
+.dash .badge.rejected { background: #f8d7da; color: #c62828; }
+
+@media (max-width: 700px) {
+  .stats { grid-template-columns: repeat(2, 1fr); }
+}
+
+.switch {
+  font-size: 14px;
+  color: #1f3a93;
+  cursor: pointer;
+  text-align: center;
+}

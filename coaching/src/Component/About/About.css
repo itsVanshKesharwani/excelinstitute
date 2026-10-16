@@ -1,0 +1,76 @@
+.faculty-section{
+    background:#fff;
+}
+
+.faculty-card{
+    background:#11182d;
+    border-radius:25px;
+    padding:60px;
+}
+
+.faculty-img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #33425d;
+}
+
+.faculty-name{
+    color:white;
+    font-size:34px;
+    font-weight:700;
+}
+
+.faculty-post{
+    color:#ff7a00;
+    font-size:22px;
+    margin-bottom:8px;
+}
+
+.qualification{
+    color:#b8c2d6;
+    font-size:18px;
+}
+
+.faculty-title{
+    color:#ff7a00;
+    font-size:42px;
+    font-weight:bold;
+    margin-bottom:35px;
+}
+
+.faculty-message{
+    border-left:5px solid #ff7a00;
+    padding-left:30px;
+}
+
+.faculty-message p{
+    color:white;
+    font-size:24px;
+    line-height:1.8;
+    font-style:italic;
+}
+
+@media(max-width:992px){
+
+.faculty-card{
+    padding:35px;
+}
+
+.faculty-title{
+    text-align:center;
+    font-size:32px;
+}
+
+.faculty-img{
+    width:180px;
+    height:180px;
+    margin-bottom:20px;
+}
+
+.faculty-message p{
+    font-size:18px;
+}
+
+}
